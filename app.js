@@ -44,7 +44,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         
         // Check if game is won (score >= 100), else next player turn
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             gamePlaying = false;
             document.querySelector('#name-' + activePlayer).textContent = "WINNER!";
             diceDOM.style.display = 'none';
